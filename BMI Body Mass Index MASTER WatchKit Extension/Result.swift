@@ -18,6 +18,7 @@ class Result: WKInterfaceController {
     @IBOutlet weak var resultLabel: WKInterfaceLabel!
     @IBOutlet weak var aboutTheResultLabel: WKInterfaceLabel!
     
+    
     var mode = String?()
     
     
@@ -27,6 +28,9 @@ class Result: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         // Configure interface objects here.
+        
+        
+        
         mode = context as! String!
         NSLog(mode!)
         

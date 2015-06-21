@@ -158,15 +158,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSd-AA-YRd">
-                                <rect key="frame" x="173" y="153" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSd-AA-YRd">
+                                <rect key="frame" x="16" y="115" width="288" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBC-ku-tbj">
-                                <rect key="frame" x="158" y="250" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBC-ku-tbj">
+                                <rect key="frame" x="16" y="159" width="288" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -175,6 +175,16 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="LSd-AA-YRd" secondAttribute="centerX" id="9Wp-TS-hT8"/>
+                            <constraint firstItem="wBC-ku-tbj" firstAttribute="trailing" secondItem="Xtv-Uh-QLp" secondAttribute="trailingMargin" id="AI8-qA-TsW"/>
+                            <constraint firstItem="LSd-AA-YRd" firstAttribute="trailing" secondItem="Xtv-Uh-QLp" secondAttribute="trailingMargin" id="BeD-fc-d25"/>
+                            <constraint firstAttribute="centerY" secondItem="wBC-ku-tbj" secondAttribute="centerY" constant="70.5" id="Erv-U6-kG5"/>
+                            <constraint firstAttribute="centerY" secondItem="LSd-AA-YRd" secondAttribute="centerY" constant="114.5" id="KF3-uZ-iZm"/>
+                            <constraint firstAttribute="centerX" secondItem="wBC-ku-tbj" secondAttribute="centerX" id="gzF-Qi-BGl"/>
+                            <constraint firstItem="wBC-ku-tbj" firstAttribute="leading" secondItem="Xtv-Uh-QLp" secondAttribute="leadingMargin" id="q7a-5I-Mn4"/>
+                            <constraint firstItem="LSd-AA-YRd" firstAttribute="leading" secondItem="Xtv-Uh-QLp" secondAttribute="leadingMargin" id="uLs-Iy-9g7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Result" id="7dV-Ki-z1u">
                         <barButtonItem key="backBarButtonItem" title="Result" id="Jbb-WN-ax0"/>

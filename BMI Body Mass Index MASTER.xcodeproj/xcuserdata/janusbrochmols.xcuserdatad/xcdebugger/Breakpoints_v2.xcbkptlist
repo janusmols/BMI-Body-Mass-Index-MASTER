@@ -22,7 +22,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BMI Body Mass Index MASTER/ResultController.swift"
@@ -33,6 +33,68 @@
             endingLineNumber = "17"
             landmarkName = "ResultController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BMI_Body_Mass_Index_MASTER.ResultController.resultLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UILabel&gt;"
+                  moduleName = "BMI Body Mass Index MASTER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janusbrochmols/Desktop/Xcode%20projekter/BMI%20Body%20Mass%20Index%20MASTER/BMI%20Body%20Mass%20Index%20MASTER/ResultController.swift"
+                  timestampString = "456578229.281536"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BMI_Body_Mass_Index_MASTER.ResultController.resultLabel.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UILabel&gt;"
+                  moduleName = "BMI Body Mass Index MASTER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janusbrochmols/Desktop/Xcode%20projekter/BMI%20Body%20Mass%20Index%20MASTER/BMI%20Body%20Mass%20Index%20MASTER/ResultController.swift"
+                  timestampString = "456578229.283419"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BMI_Body_Mass_Index_MASTER.ResultController.init (BMI_Body_Mass_Index_MASTER.ResultController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; BMI_Body_Mass_Index_MASTER.ResultController"
+                  moduleName = "BMI Body Mass Index MASTER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janusbrochmols/Desktop/Xcode%20projekter/BMI%20Body%20Mass%20Index%20MASTER/BMI%20Body%20Mass%20Index%20MASTER/ResultController.swift"
+                  timestampString = "456578229.284198"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BMI_Body_Mass_Index_MASTER.ResultController.init (BMI_Body_Mass_Index_MASTER.ResultController.Type)(coder : ObjectiveC.NSCoder) -&gt; BMI_Body_Mass_Index_MASTER.ResultController"
+                  moduleName = "BMI Body Mass Index MASTER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janusbrochmols/Desktop/Xcode%20projekter/BMI%20Body%20Mass%20Index%20MASTER/BMI%20Body%20Mass%20Index%20MASTER/ResultController.swift"
+                  timestampString = "456578229.284477"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "37">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
