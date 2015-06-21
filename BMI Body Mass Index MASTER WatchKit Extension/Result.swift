@@ -17,6 +17,7 @@ class Result: WKInterfaceController {
     
     @IBOutlet weak var resultLabel: WKInterfaceLabel!
     @IBOutlet weak var aboutTheResultLabel: WKInterfaceLabel!
+    @IBOutlet weak var IntervalImage: WKInterfaceImage!
     
     
     var mode = String?()
@@ -29,7 +30,7 @@ class Result: WKInterfaceController {
         super.awakeWithContext(context)
         // Configure interface objects here.
         
-        
+        IntervalImage.setImageNamed("BMI Interval.png")
         
         mode = context as! String!
         NSLog(mode!)

@@ -74,7 +74,7 @@
 /* Begin PBXFileReference section */
 		615BB05B1B36CF4600B7A977 /* ResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
 		615BB05D1B36EB7C00B7A977 /* BMI Interval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMI Interval.png"; sourceTree = "<group>"; };
-		615BB05F1B36EB9100B7A977 /* BMI Interval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMI Interval.png"; sourceTree = "<group>"; };
+		615BB05F1B36EB9100B7A977 /* BMI Interval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BMI Interval.png"; path = "../BMI Body Mass Index MASTER WatchKit Extension/BMI Interval.png"; sourceTree = "<group>"; };
 		616766FA1B3614EB0056E405 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		61C065641B360D1C008D1313 /* BMI Body Mass Index MASTER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Body Mass Index MASTER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C065681B360D1C008D1313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -209,7 +209,6 @@
 		61C0659B1B360EF4008D1313 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				615BB05F1B36EB9100B7A977 /* BMI Interval.png */,
 				61C0659C1B360EF4008D1313 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -228,6 +227,7 @@
 		61C065A81B360EF4008D1313 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				615BB05F1B36EB9100B7A977 /* BMI Interval.png */,
 				61C065A91B360EF4008D1313 /* Info.plist */,
 			);
 			name = "Supporting Files";

@@ -110,8 +110,10 @@
                         <label alignment="left" text="Label" id="Qum-MC-OyQ">
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
                         </label>
+                        <imageView alignment="left" id="6NO-7z-YrZ"/>
                     </items>
                     <connections>
+                        <outlet property="IntervalImage" destination="6NO-7z-YrZ" id="ePu-BQ-8uP"/>
                         <outlet property="aboutTheResultLabel" destination="Qum-MC-OyQ" id="7tb-iJ-kw4"/>
                         <outlet property="resultLabel" destination="YNx-fI-jlB" id="YoQ-Vo-ToB"/>
                     </connections>
