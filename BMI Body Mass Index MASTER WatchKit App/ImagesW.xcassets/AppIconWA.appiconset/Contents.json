@@ -4,7 +4,7 @@
       "size" : "24x24",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "BMI Icon 48 x48.png",
+      "filename" : "bmi icon 48 x48-1.png",
       "role" : "notificationCenter",
       "subtype" : "38mm"
     },
@@ -12,21 +12,21 @@
       "size" : "27.5x27.5",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "BMI Icon 55 x 55.png",
+      "filename" : "bmi icon 55 x 55 -1.png",
       "role" : "notificationCenter",
       "subtype" : "42mm"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "BMI Icon 58 x 58.png",
+      "filename" : "bmi icon 58 x 58-1.png",
       "role" : "companionSettings",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "BMI Icon 87 x 87.png",
+      "filename" : "bmi icon 87 x 87-1.png",
       "role" : "companionSettings",
       "scale" : "3x"
     },
@@ -34,7 +34,7 @@
       "size" : "40x40",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "BMI Icon80 x 80.png",
+      "filename" : "bmi icon 80 x 80-1.png",
       "role" : "appLauncher",
       "subtype" : "38mm"
     },
@@ -42,7 +42,7 @@
       "size" : "44x44",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "BMI Icon 88 x 88.png",
+      "filename" : "bmi icon 88 x 88-1.png",
       "role" : "longLook",
       "subtype" : "42mm"
     },
@@ -50,7 +50,7 @@
       "size" : "86x86",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "BMI Icon 172 x 172.png",
+      "filename" : "bmi icon 172 x 172-1.png",
       "role" : "quickLook",
       "subtype" : "38mm"
     },
@@ -58,7 +58,7 @@
       "size" : "98x98",
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "BMI Icon 196 x 196.png",
+      "filename" : "bmi icon 196 x 196-1.png",
       "role" : "quickLook",
       "subtype" : "42mm"
     }

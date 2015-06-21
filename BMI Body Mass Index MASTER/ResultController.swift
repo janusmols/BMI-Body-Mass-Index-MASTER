@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import iAd
 
 var height: String!
 var weight: String!
 var modeMetric: Bool!
 
-class ResultController: UIViewController {
+class ResultController: UIViewController, ADBannerViewDelegate {
     
     @IBOutlet weak var resultLabel: UILabel!
     
@@ -20,10 +21,16 @@ class ResultController: UIViewController {
     
     @IBOutlet weak var background: UIImageView!
     
+    var bannerView:ADBannerView?
+    
     var BMI : Float = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.canDisplayBannerAds = true
+        self.bannerView?.delegate = self
+        self.bannerView?.hidden = true
         
         addEffect()
         
@@ -104,6 +111,18 @@ class ResultController: UIViewController {
     }
 
     
+    func bannerViewDidLoadAd(banner: ADBannerView!) {
+        self.bannerView?.hidden = false
+    }
+    
+    func bannerViewActionShouldBegin(banner: ADBannerView!, willLeaveApplication willLeave: Bool) -> Bool {
+        return willLeave
+    }
+    
+    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
+        self.bannerView?.hidden = true
+    }
+
     
     
 }

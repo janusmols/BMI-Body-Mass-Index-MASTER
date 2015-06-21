@@ -7,21 +7,27 @@
 //
 
 import UIKit
+import iAd
 
 
-
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, ADBannerViewDelegate {
 
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var metricBtn: UIButton!
     @IBOutlet weak var imperialBtn: UIButton!
     @IBOutlet weak var heightInput: UITextField!
     @IBOutlet weak var weightInput: UITextField!
+    
     var metricMode = true
     
+    var bannerView:ADBannerView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.canDisplayBannerAds = true
+        self.bannerView?.delegate = self
+        self.bannerView?.hidden = true
         
         var metricMode = true
         
@@ -115,5 +121,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
             alert.show()
         }
        }
+    
+    func bannerViewDidLoadAd(banner: ADBannerView!) {
+        self.bannerView?.hidden = false
+    }
+    
+    func bannerViewActionShouldBegin(banner: ADBannerView!, willLeaveApplication willLeave: Bool) -> Bool {
+    return willLeave
+    }
+    
+    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
+        self.bannerView?.hidden = true
+    }
 
 }
