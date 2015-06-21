@@ -8,7 +8,7 @@
 
 import UIKit
 
-var metricMode = true
+
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var imperialBtn: UIButton!
     @IBOutlet weak var heightInput: UITextField!
     @IBOutlet weak var weightInput: UITextField!
-    
+    var metricMode = true
     
     
     override func viewDidLoad() {
@@ -100,9 +100,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func calculateAction(sender: AnyObject) {
-        
-    }
-
+        modeMetric = metricMode
+        height = heightInput.text
+        weight = weightInput.text
+       }
 
 }
-

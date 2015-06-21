@@ -1,6 +1,6 @@
 //
 //  ResultController.swift
-//  
+//
 //
 //  Created by Janus Broch Mols on 21/06/15.
 //
@@ -8,23 +8,113 @@
 
 import UIKit
 
-class ResultController: UIViewController {
+var height: String!
+var weight: String!
+var modeMetric: Bool!
 
-    @IBOutlet weak var usersBMILabel: UILabel!
+class ResultController: UIViewController {
     
-    @IBOutlet weak var usersBMIStatusLabel: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    @IBOutlet weak var aboutTheResultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        var Height : Float = NSString(string: height).floatValue
+        var Weight : Float = NSString(string: weight).floatValue
+        NSLog("\(Height)")
+        NSLog("\(Weight)")
+        
+        
+        if modeMetric == true{
+            //BMI = ( Weight in Kilograms / ( Height in Meters x Height in Meters ) )
+            var BMI = Weight / (Height * Height)
+            NSLog("\(BMI)")
+            resultLabel.text = (NSString(format: "Your BMI: %.01f", BMI) as String)
+            var aboutTheResultText : String
+            
+            if (BMI <= 18.5){
+                
+                aboutTheResultLabel.textColor = (UIColor.blueColor())
+                aboutTheResultLabel.text = ("Underweight")
+            }
+            if ((BMI >= 18.5) && (BMI <= 24.99)){
+                
+                aboutTheResultLabel.textColor = (UIColor.greenColor())
+                aboutTheResultLabel.text = ("Normal Weight")
+            }
+            if ((BMI >= 25.0) && (BMI <= 29.99)){
+                
+                aboutTheResultLabel.textColor = (UIColor.yellowColor())
+                aboutTheResultLabel.text = ("Overweight")
+            }
+            if ((BMI >= 30.0) && (BMI <= 34.99)){
+                
+                aboutTheResultLabel.textColor = (UIColor.orangeColor())
+                aboutTheResultLabel.text = ("Obesity (Class 1)")
+            }
+            if ((BMI >= 35.0) && (BMI <= 39.99)){
+                
+                aboutTheResultLabel.textColor = (UIColor.redColor())
+                aboutTheResultLabel.text = ("Obesity (Class 2)")
+            }
+            if (BMI >= 40.0){
+                
+                aboutTheResultLabel.textColor = (UIColor.redColor())
+                aboutTheResultLabel.text = ("Morbid Obesity")
+            }
+            
+            
+            
+            
+        }
+        else if modeMetric == false{
+            //BMI = ( Weight in Pounds / ( Height in inches x Height in inches ) ) x 703
+            var BMI = (Weight / (Height * Height)) * 703
+            NSLog("\(BMI)")
+            resultLabel.text = (NSString(format: "Your BMI: %.01f", BMI) as String)
+            
+            if (BMI <= 18.5){
+                
+                aboutTheResultLabel.textColor = (UIColor.blueColor())
+                aboutTheResultLabel.text = ("Underweight")
+            }
+            if ((BMI >= 18.5) && (BMI <= 24.99)){
+                
+                aboutTheResultLabel.textColor = (UIColor.greenColor())
+                aboutTheResultLabel.text = ("Normal Weight")
+            }
+            if ((BMI >= 25.0) && (BMI <= 29.99)){
+                
+                aboutTheResultLabel.textColor = (UIColor.yellowColor())
+                aboutTheResultLabel.text = ("Overweight")
+            }
+            if ((BMI >= 30.0) && (BMI <= 34.99)){
+                
+                aboutTheResultLabel.textColor = (UIColor.orangeColor())
+                aboutTheResultLabel.text = ("Obesity (Class 1)")
+            }
+            if ((BMI >= 35.0) && (BMI <= 39.99)){
+                
+                aboutTheResultLabel.textColor = (UIColor.redColor())
+                aboutTheResultLabel.text = ("Obesity (Class 2)")
+            }
+            if (BMI >= 40.0){
+                
+                aboutTheResultLabel.textColor = (UIColor.redColor())
+                aboutTheResultLabel.text = ("Morbid Obesity")
+            }
+            
+        }
+        
+        
+        
     }
     
-
-
+    
+    
 }
+
+
+

@@ -181,8 +181,8 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="usersBMILabel" destination="LSd-AA-YRd" id="yek-bZ-FZQ"/>
-                        <outlet property="usersBMIStatusLabel" destination="wBC-ku-tbj" id="AaT-5p-HI5"/>
+                        <outlet property="aboutTheResultLabel" destination="wBC-ku-tbj" id="qQi-o8-zPt"/>
+                        <outlet property="resultLabel" destination="LSd-AA-YRd" id="oXg-IT-wnV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qdp-SB-2Q0" userLabel="First Responder" sceneMemberID="firstResponder"/>
