@@ -107,10 +107,10 @@
                         <label width="128" height="32" alignment="center" text="Label" textAlignment="center" id="YNx-fI-jlB">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </label>
-                        <label alignment="left" text="Label" id="Qum-MC-OyQ">
+                        <label alignment="center" text="Label" id="Qum-MC-OyQ">
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
                         </label>
-                        <imageView alignment="left" id="6NO-7z-YrZ"/>
+                        <imageView alignment="left" verticalAlignment="center" id="6NO-7z-YrZ"/>
                     </items>
                     <connections>
                         <outlet property="IntervalImage" destination="6NO-7z-YrZ" id="ePu-BQ-8uP"/>
