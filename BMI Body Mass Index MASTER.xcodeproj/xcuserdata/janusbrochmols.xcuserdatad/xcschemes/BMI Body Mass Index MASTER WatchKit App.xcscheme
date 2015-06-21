@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0630"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "61C065A21B360EF4008D1313"
+               BuildableName = "BMI Body Mass Index MASTER WatchKit App.app"
+               BlueprintName = "BMI Body Mass Index MASTER WatchKit App"
+               ReferencedContainer = "container:BMI Body Mass Index MASTER.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "61C065631B360D1C008D1313"
+               BuildableName = "BMI Body Mass Index MASTER.app"
+               BlueprintName = "BMI Body Mass Index MASTER"
+               ReferencedContainer = "container:BMI Body Mass Index MASTER.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "61C065981B360EF4008D1313"
+               BuildableName = "BMI Body Mass Index MASTER WatchKit Extension.appex"
+               BlueprintName = "BMI Body Mass Index MASTER WatchKit Extension"
+               ReferencedContainer = "container:BMI Body Mass Index MASTER.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "61C065A21B360EF4008D1313"
+            BuildableName = "BMI Body Mass Index MASTER WatchKit App.app"
+            BlueprintName = "BMI Body Mass Index MASTER WatchKit App"
+            ReferencedContainer = "container:BMI Body Mass Index MASTER.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/BMI Body Mass Index MASTER">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "61C065A21B360EF4008D1313"
+            BuildableName = "BMI Body Mass Index MASTER WatchKit App.app"
+            BlueprintName = "BMI Body Mass Index MASTER WatchKit App"
+            ReferencedContainer = "container:BMI Body Mass Index MASTER.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "61C065A21B360EF4008D1313"
+            BuildableName = "BMI Body Mass Index MASTER WatchKit App.app"
+            BlueprintName = "BMI Body Mass Index MASTER WatchKit App"
+            ReferencedContainer = "container:BMI Body Mass Index MASTER.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/BMI Body Mass Index MASTER">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "61C065A21B360EF4008D1313"
+            BuildableName = "BMI Body Mass Index MASTER WatchKit App.app"
+            BlueprintName = "BMI Body Mass Index MASTER WatchKit App"
+            ReferencedContainer = "container:BMI Body Mass Index MASTER.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "61C065A21B360EF4008D1313"
+            BuildableName = "BMI Body Mass Index MASTER WatchKit App.app"
+            BlueprintName = "BMI Body Mass Index MASTER WatchKit App"
+            ReferencedContainer = "container:BMI Body Mass Index MASTER.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

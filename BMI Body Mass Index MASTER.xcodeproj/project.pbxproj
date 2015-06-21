@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		616766FB1B3614EB0056E405 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616766FA1B3614EB0056E405 /* Storyboard.storyboard */; };
+		61C0656A1B360D1C008D1313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C065691B360D1C008D1313 /* AppDelegate.swift */; };
+		61C0656D1B360D1C008D1313 /* BMI_Body_Mass_Index_MASTER.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61C0656B1B360D1C008D1313 /* BMI_Body_Mass_Index_MASTER.xcdatamodeld */; };
+		61C065741B360D1C008D1313 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C065731B360D1C008D1313 /* Images.xcassets */; };
+		61C065771B360D1C008D1313 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61C065751B360D1C008D1313 /* LaunchScreen.xib */; };
+		61C065831B360D1C008D1313 /* BMI_Body_Mass_Index_MASTERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C065821B360D1C008D1313 /* BMI_Body_Mass_Index_MASTERTests.swift */; };
+		61C0658D1B360EAA008D1313 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C0658C1B360EAA008D1313 /* HomeScreen.swift */; };
+		61C0658E1B360EAA008D1313 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C0658C1B360EAA008D1313 /* HomeScreen.swift */; };
+		61C065901B360EBF008D1313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C0658F1B360EBF008D1313 /* Main.storyboard */; };
+		61C065931B360ED9008D1313 /* os-x-10-10-yosemite-valley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61C065921B360ED9008D1313 /* os-x-10-10-yosemite-valley.jpg */; };
+		61C065941B360ED9008D1313 /* os-x-10-10-yosemite-valley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61C065921B360ED9008D1313 /* os-x-10-10-yosemite-valley.jpg */; };
+		61C065A01B360EF4008D1313 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C0659F1B360EF4008D1313 /* Images.xcassets */; };
+		61C065A41B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 61C065A31B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit App.app */; };
+		61C065AE1B360EF4008D1313 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C065AD1B360EF4008D1313 /* Images.xcassets */; };
+		61C065B11B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 61C065991B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		61C065BA1B360F5D008D1313 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C065B91B360F5D008D1313 /* Units.swift */; };
+		61C065BC1B360F66008D1313 /* Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C065BB1B360F66008D1313 /* Height.swift */; };
+		61C065C21B360F74008D1313 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C065BE1B360F74008D1313 /* Result.swift */; };
+		61C065C31B360F74008D1313 /* UsersTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C065BF1B360F74008D1313 /* UsersTableRowController.swift */; };
+		61C065C41B360F74008D1313 /* UsersTableRowControllerWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C065C01B360F74008D1313 /* UsersTableRowControllerWeight.swift */; };
+		61F9AD341B36C3A300B1CCA3 /* WeightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F9AD331B36C3A300B1CCA3 /* WeightController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61C0657D1B360D1C008D1313 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61C0655C1B360D1B008D1313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C065631B360D1C008D1313;
+			remoteInfo = "BMI Body Mass Index MASTER";
+		};
+		61C065A51B360EF4008D1313 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61C0655C1B360D1B008D1313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C065A21B360EF4008D1313;
+			remoteInfo = "BMI Body Mass Index MASTER WatchKit App";
+		};
+		61C065AF1B360EF4008D1313 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61C0655C1B360D1B008D1313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C065981B360EF4008D1313;
+			remoteInfo = "BMI Body Mass Index MASTER WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		61C065B81B360EF4008D1313 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				61C065B11B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		616766FA1B3614EB0056E405 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		61C065641B360D1C008D1313 /* BMI Body Mass Index MASTER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Body Mass Index MASTER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C065681B360D1C008D1313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C065691B360D1C008D1313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61C0656C1B360D1C008D1313 /* BMI_Body_Mass_Index_MASTER.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BMI_Body_Mass_Index_MASTER.xcdatamodel; sourceTree = "<group>"; };
+		61C065731B360D1C008D1313 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		61C065761B360D1C008D1313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		61C0657C1B360D1C008D1313 /* BMI Body Mass Index MASTERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BMI Body Mass Index MASTERTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C065811B360D1C008D1313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C065821B360D1C008D1313 /* BMI_Body_Mass_Index_MASTERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI_Body_Mass_Index_MASTERTests.swift; sourceTree = "<group>"; };
+		61C0658C1B360EAA008D1313 /* HomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		61C0658F1B360EBF008D1313 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		61C065921B360ED9008D1313 /* os-x-10-10-yosemite-valley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "os-x-10-10-yosemite-valley.jpg"; sourceTree = "<group>"; };
+		61C065991B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BMI Body Mass Index MASTER WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C0659C1B360EF4008D1313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C0659F1B360EF4008D1313 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		61C065A31B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Body Mass Index MASTER WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C065A91B360EF4008D1313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C065AD1B360EF4008D1313 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		61C065B91B360F5D008D1313 /* Units.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
+		61C065BB1B360F66008D1313 /* Height.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Height.swift; sourceTree = "<group>"; };
+		61C065BE1B360F74008D1313 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		61C065BF1B360F74008D1313 /* UsersTableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableRowController.swift; sourceTree = "<group>"; };
+		61C065C01B360F74008D1313 /* UsersTableRowControllerWeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableRowControllerWeight.swift; sourceTree = "<group>"; };
+		61F9AD331B36C3A300B1CCA3 /* WeightController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61C065611B360D1C008D1313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C065791B360D1C008D1313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C065961B360EF4008D1313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61C0655B1B360D1B008D1313 = {
+			isa = PBXGroup;
+			children = (
+				61C065661B360D1C008D1313 /* BMI Body Mass Index MASTER */,
+				61C0657F1B360D1C008D1313 /* BMI Body Mass Index MASTERTests */,
+				61C0659A1B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit Extension */,
+				61C065A71B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit App */,
+				61C065651B360D1C008D1313 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61C065651B360D1C008D1313 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61C065641B360D1C008D1313 /* BMI Body Mass Index MASTER.app */,
+				61C0657C1B360D1C008D1313 /* BMI Body Mass Index MASTERTests.xctest */,
+				61C065991B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit Extension.appex */,
+				61C065A31B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61C065661B360D1C008D1313 /* BMI Body Mass Index MASTER */ = {
+			isa = PBXGroup;
+			children = (
+				61C065691B360D1C008D1313 /* AppDelegate.swift */,
+				61C0658C1B360EAA008D1313 /* HomeScreen.swift */,
+				61C0658F1B360EBF008D1313 /* Main.storyboard */,
+				61C065731B360D1C008D1313 /* Images.xcassets */,
+				61C065751B360D1C008D1313 /* LaunchScreen.xib */,
+				61C0656B1B360D1C008D1313 /* BMI_Body_Mass_Index_MASTER.xcdatamodeld */,
+				61C065671B360D1C008D1313 /* Supporting Files */,
+			);
+			path = "BMI Body Mass Index MASTER";
+			sourceTree = "<group>";
+		};
+		61C065671B360D1C008D1313 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61C065921B360ED9008D1313 /* os-x-10-10-yosemite-valley.jpg */,
+				61C065681B360D1C008D1313 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61C0657F1B360D1C008D1313 /* BMI Body Mass Index MASTERTests */ = {
+			isa = PBXGroup;
+			children = (
+				61C065821B360D1C008D1313 /* BMI_Body_Mass_Index_MASTERTests.swift */,
+				61C065801B360D1C008D1313 /* Supporting Files */,
+			);
+			path = "BMI Body Mass Index MASTERTests";
+			sourceTree = "<group>";
+		};
+		61C065801B360D1C008D1313 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61C065811B360D1C008D1313 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61C0659A1B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				61C0659F1B360EF4008D1313 /* Images.xcassets */,
+				61C065B91B360F5D008D1313 /* Units.swift */,
+				61C065BB1B360F66008D1313 /* Height.swift */,
+				61F9AD331B36C3A300B1CCA3 /* WeightController.swift */,
+				61C065BE1B360F74008D1313 /* Result.swift */,
+				61C065BF1B360F74008D1313 /* UsersTableRowController.swift */,
+				61C065C01B360F74008D1313 /* UsersTableRowControllerWeight.swift */,
+				61C0659B1B360EF4008D1313 /* Supporting Files */,
+			);
+			path = "BMI Body Mass Index MASTER WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		61C0659B1B360EF4008D1313 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61C0659C1B360EF4008D1313 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61C065A71B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				61C065AD1B360EF4008D1313 /* Images.xcassets */,
+				616766FA1B3614EB0056E405 /* Storyboard.storyboard */,
+				61C065A81B360EF4008D1313 /* Supporting Files */,
+			);
+			path = "BMI Body Mass Index MASTER WatchKit App";
+			sourceTree = "<group>";
+		};
+		61C065A81B360EF4008D1313 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61C065A91B360EF4008D1313 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61C065631B360D1C008D1313 /* BMI Body Mass Index MASTER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C065861B360D1C008D1313 /* Build configuration list for PBXNativeTarget "BMI Body Mass Index MASTER" */;
+			buildPhases = (
+				61C065601B360D1C008D1313 /* Sources */,
+				61C065611B360D1C008D1313 /* Frameworks */,
+				61C065621B360D1C008D1313 /* Resources */,
+				61C065B81B360EF4008D1313 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61C065B01B360EF4008D1313 /* PBXTargetDependency */,
+			);
+			name = "BMI Body Mass Index MASTER";
+			productName = "BMI Body Mass Index MASTER";
+			productReference = 61C065641B360D1C008D1313 /* BMI Body Mass Index MASTER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61C0657B1B360D1C008D1313 /* BMI Body Mass Index MASTERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C065891B360D1C008D1313 /* Build configuration list for PBXNativeTarget "BMI Body Mass Index MASTERTests" */;
+			buildPhases = (
+				61C065781B360D1C008D1313 /* Sources */,
+				61C065791B360D1C008D1313 /* Frameworks */,
+				61C0657A1B360D1C008D1313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61C0657E1B360D1C008D1313 /* PBXTargetDependency */,
+			);
+			name = "BMI Body Mass Index MASTERTests";
+			productName = "BMI Body Mass Index MASTERTests";
+			productReference = 61C0657C1B360D1C008D1313 /* BMI Body Mass Index MASTERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		61C065981B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C065B51B360EF4008D1313 /* Build configuration list for PBXNativeTarget "BMI Body Mass Index MASTER WatchKit Extension" */;
+			buildPhases = (
+				61C065951B360EF4008D1313 /* Sources */,
+				61C065961B360EF4008D1313 /* Frameworks */,
+				61C065971B360EF4008D1313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61C065A61B360EF4008D1313 /* PBXTargetDependency */,
+			);
+			name = "BMI Body Mass Index MASTER WatchKit Extension";
+			productName = "BMI Body Mass Index MASTER WatchKit Extension";
+			productReference = 61C065991B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		61C065A21B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C065B21B360EF4008D1313 /* Build configuration list for PBXNativeTarget "BMI Body Mass Index MASTER WatchKit App" */;
+			buildPhases = (
+				61C065A11B360EF4008D1313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BMI Body Mass Index MASTER WatchKit App";
+			productName = "BMI Body Mass Index MASTER WatchKit App";
+			productReference = 61C065A31B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61C0655C1B360D1B008D1313 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Janus Broch Mols";
+				TargetAttributes = {
+					61C065631B360D1C008D1313 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					61C0657B1B360D1C008D1313 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 61C065631B360D1C008D1313;
+					};
+					61C065981B360EF4008D1313 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					61C065A21B360EF4008D1313 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = 61C0655F1B360D1B008D1313 /* Build configuration list for PBXProject "BMI Body Mass Index MASTER" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61C0655B1B360D1B008D1313;
+			productRefGroup = 61C065651B360D1C008D1313 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61C065631B360D1C008D1313 /* BMI Body Mass Index MASTER */,
+				61C0657B1B360D1C008D1313 /* BMI Body Mass Index MASTERTests */,
+				61C065981B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit Extension */,
+				61C065A21B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61C065621B360D1C008D1313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C065901B360EBF008D1313 /* Main.storyboard in Resources */,
+				61C065771B360D1C008D1313 /* LaunchScreen.xib in Resources */,
+				61C065931B360ED9008D1313 /* os-x-10-10-yosemite-valley.jpg in Resources */,
+				61C065741B360D1C008D1313 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C0657A1B360D1C008D1313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C065941B360ED9008D1313 /* os-x-10-10-yosemite-valley.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C065971B360EF4008D1313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C065A41B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit App.app in Resources */,
+				61C065A01B360EF4008D1313 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C065A11B360EF4008D1313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C065AE1B360EF4008D1313 /* Images.xcassets in Resources */,
+				616766FB1B3614EB0056E405 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61C065601B360D1C008D1313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C0656A1B360D1C008D1313 /* AppDelegate.swift in Sources */,
+				61C0656D1B360D1C008D1313 /* BMI_Body_Mass_Index_MASTER.xcdatamodeld in Sources */,
+				61C0658D1B360EAA008D1313 /* HomeScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C065781B360D1C008D1313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C0658E1B360EAA008D1313 /* HomeScreen.swift in Sources */,
+				61C065831B360D1C008D1313 /* BMI_Body_Mass_Index_MASTERTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C065951B360EF4008D1313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C065BC1B360F66008D1313 /* Height.swift in Sources */,
+				61C065BA1B360F5D008D1313 /* Units.swift in Sources */,
+				61C065C31B360F74008D1313 /* UsersTableRowController.swift in Sources */,
+				61F9AD341B36C3A300B1CCA3 /* WeightController.swift in Sources */,
+				61C065C21B360F74008D1313 /* Result.swift in Sources */,
+				61C065C41B360F74008D1313 /* UsersTableRowControllerWeight.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61C0657E1B360D1C008D1313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61C065631B360D1C008D1313 /* BMI Body Mass Index MASTER */;
+			targetProxy = 61C0657D1B360D1C008D1313 /* PBXContainerItemProxy */;
+		};
+		61C065A61B360EF4008D1313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61C065A21B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit App */;
+			targetProxy = 61C065A51B360EF4008D1313 /* PBXContainerItemProxy */;
+		};
+		61C065B01B360EF4008D1313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61C065981B360EF4008D1313 /* BMI Body Mass Index MASTER WatchKit Extension */;
+			targetProxy = 61C065AF1B360EF4008D1313 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		61C065751B360D1C008D1313 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61C065761B360D1C008D1313 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61C065841B360D1C008D1313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61C065851B360D1C008D1313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61C065871B360D1C008D1313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BMI Body Mass Index MASTER/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		61C065881B360D1C008D1313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BMI Body Mass Index MASTER/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		61C0658A1B360D1C008D1313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BMI Body Mass Index MASTERTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BMI Body Mass Index MASTER.app/BMI Body Mass Index MASTER";
+			};
+			name = Debug;
+		};
+		61C0658B1B360D1C008D1313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BMI Body Mass Index MASTERTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BMI Body Mass Index MASTER.app/BMI Body Mass Index MASTER";
+			};
+			name = Release;
+		};
+		61C065B31B360EF4008D1313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = BMI_Body_Mass_Index_MASTER_WatchKit_Extension;
+				INFOPLIST_FILE = "BMI Body Mass Index MASTER WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		61C065B41B360EF4008D1313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = BMI_Body_Mass_Index_MASTER_WatchKit_Extension;
+				INFOPLIST_FILE = "BMI Body Mass Index MASTER WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		61C065B61B360EF4008D1313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BMI Body Mass Index MASTER WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61C065B71B360EF4008D1313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "BMI Body Mass Index MASTER WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61C0655F1B360D1B008D1313 /* Build configuration list for PBXProject "BMI Body Mass Index MASTER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C065841B360D1C008D1313 /* Debug */,
+				61C065851B360D1C008D1313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61C065861B360D1C008D1313 /* Build configuration list for PBXNativeTarget "BMI Body Mass Index MASTER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C065871B360D1C008D1313 /* Debug */,
+				61C065881B360D1C008D1313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61C065891B360D1C008D1313 /* Build configuration list for PBXNativeTarget "BMI Body Mass Index MASTERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C0658A1B360D1C008D1313 /* Debug */,
+				61C0658B1B360D1C008D1313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61C065B21B360EF4008D1313 /* Build configuration list for PBXNativeTarget "BMI Body Mass Index MASTER WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C065B31B360EF4008D1313 /* Debug */,
+				61C065B41B360EF4008D1313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61C065B51B360EF4008D1313 /* Build configuration list for PBXNativeTarget "BMI Body Mass Index MASTER WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C065B61B360EF4008D1313 /* Debug */,
+				61C065B71B360EF4008D1313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		61C0656B1B360D1C008D1313 /* BMI_Body_Mass_Index_MASTER.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				61C0656C1B360D1C008D1313 /* BMI_Body_Mass_Index_MASTER.xcdatamodel */,
+			);
+			currentVersion = 61C0656C1B360D1C008D1313 /* BMI_Body_Mass_Index_MASTER.xcdatamodel */;
+			path = BMI_Body_Mass_Index_MASTER.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 61C0655C1B360D1B008D1313 /* Project object */;
+}

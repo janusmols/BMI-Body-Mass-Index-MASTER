@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dnX-3W-uNN">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose units-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="BMI_Body_Mass_Index" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="os-x-10-10-yosemite-valley.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0bU-sC-ZyH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <animations/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W1N-sA-Hoi">
+                                <rect key="frame" x="61" y="238" width="200" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0Xa-dd-nnO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qf-Uf-25M">
+                                <rect key="frame" x="61" y="276" width="200" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaD-wU-e8O">
+                                <rect key="frame" x="99" y="366" width="122" height="54"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="OTW-SU-m2q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="25"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="calculateAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qa3-oy-8RE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFI-fS-1iM">
+                                <rect key="frame" x="30" y="84" width="260" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="IK0-zn-p5f"/>
+                                </constraints>
+                                <state key="normal" title="Metric Method (kilograms &amp; meters)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="metricMode:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nd3-UO-ua5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2n-05-kIi">
+                                <rect key="frame" x="30" y="122" width="260" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Imperial Method (pounds &amp; inches)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="imperialMode:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XRJ-Nb-CIm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0bU-sC-ZyH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="2X2-OG-iCb"/>
+                            <constraint firstAttribute="centerX" secondItem="c2n-05-kIi" secondAttribute="centerX" id="J1w-DY-8Qe"/>
+                            <constraint firstAttribute="centerX" secondItem="uaD-wU-e8O" secondAttribute="centerX" id="Kte-0a-9P5"/>
+                            <constraint firstAttribute="centerX" secondItem="W1N-sA-Hoi" secondAttribute="centerX" constant="-0.5" id="MqR-IZ-VOn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0bU-sC-ZyH" secondAttribute="trailing" constant="-16" id="Nat-0R-8lf"/>
+                            <constraint firstAttribute="centerX" secondItem="gFI-fS-1iM" secondAttribute="centerX" id="cE8-j1-UPJ"/>
+                            <constraint firstAttribute="centerY" secondItem="W1N-sA-Hoi" secondAttribute="centerY" constant="-13" id="eT3-1F-KhH"/>
+                            <constraint firstItem="gFI-fS-1iM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="ea1-KE-EwL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="uaD-wU-e8O" secondAttribute="bottom" constant="60" id="g2R-Yo-ecL"/>
+                            <constraint firstItem="c2n-05-kIi" firstAttribute="width" secondItem="gFI-fS-1iM" secondAttribute="width" id="jL3-hs-jdn"/>
+                            <constraint firstItem="8qf-Uf-25M" firstAttribute="centerX" secondItem="W1N-sA-Hoi" secondAttribute="centerX" id="lyZ-EX-muj"/>
+                            <constraint firstItem="8qf-Uf-25M" firstAttribute="top" secondItem="W1N-sA-Hoi" secondAttribute="bottom" constant="8" symbolic="YES" id="meP-oA-PbP"/>
+                            <constraint firstItem="8qf-Uf-25M" firstAttribute="width" secondItem="W1N-sA-Hoi" secondAttribute="width" id="owi-eb-qI9"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0bU-sC-ZyH" secondAttribute="bottom" id="rf2-YX-6dX"/>
+                            <constraint firstItem="c2n-05-kIi" firstAttribute="top" secondItem="gFI-fS-1iM" secondAttribute="bottom" constant="8" id="uqx-cL-jfl"/>
+                            <constraint firstItem="0bU-sC-ZyH" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="wjB-L8-iKq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose units" id="ikH-ug-slb"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="background" destination="0bU-sC-ZyH" id="52j-yc-oyH"/>
+                        <outlet property="heightInput" destination="W1N-sA-Hoi" id="Bim-mU-Bpj"/>
+                        <outlet property="imperialBtn" destination="c2n-05-kIi" id="LRM-qg-ZrL"/>
+                        <outlet property="metricBtn" destination="gFI-fS-1iM" id="DAq-Wa-Vui"/>
+                        <outlet property="weightInput" destination="8qf-Uf-25M" id="IUj-Ep-obN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222" y="339"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O27-o5-NGa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dnX-3W-uNN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vK7-Qe-sMC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="zt3-VW-LNs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zji-0m-f8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="418" y="-357"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="os-x-10-10-yosemite-valley.jpg" width="1024" height="683"/>
+    </resources>
+</document>

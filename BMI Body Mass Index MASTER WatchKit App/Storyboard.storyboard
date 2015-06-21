@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tDa-uJ-xAQ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="b6a-6d-E1Q">
+            <objects>
+                <controller id="tDa-uJ-xAQ" customClass="InterfaceController" customModule="BMI_Body_Mass_Index_MASTER_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Units" id="oY2-Rm-hwU">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <separator alignment="left" id="9Gv-Uy-dt5"/>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Metric Method (kilograms&amp;meters)" id="Xqh-h2-M5i">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="metricMethodAction" destination="tDa-uJ-xAQ" id="HB7-JR-hKs"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Imperial Method (pounds &amp; inches)" id="W8T-se-UYX">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="imperialMethodAction" destination="tDa-uJ-xAQ" id="TMk-Zl-MfF"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="imperialMethodBtn" destination="W8T-se-UYX" id="0NH-2p-n2e"/>
+                        <outlet property="metricMethodBtn" destination="Xqh-h2-M5i" id="FYu-fC-cwy"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="481" y="325"/>
+        </scene>
+        <!--Height-->
+        <scene sceneID="Mib-P2-asY">
+            <objects>
+                <controller identifier="Height" id="CRl-Y7-iCp" customClass="Height" customModule="BMI_Body_Mass_Index_MASTER_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="label" id="2mx-cm-ZIb">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <separator alignment="left" id="EQq-jf-sgl"/>
+                        <table alignment="left" id="Ms7-hF-IfT">
+                            <items>
+                                <tableRow identifier="UsersTableRowController" id="Aa8-gf-7At" customClass="UsersTableRowController" customModule="BMI_Body_Mass_Index_MASTER_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="PaH-eZ-E4F">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="gSG-dm-W2g"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="gSG-dm-W2g" id="zMx-i7-M0K"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="myTable" destination="Ms7-hF-IfT" id="DtX-Yb-gnE"/>
+                        <outlet property="titleLabel" destination="2mx-cm-ZIb" id="Q7J-vH-lWt"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="643" y="325"/>
+        </scene>
+        <!--Weight-->
+        <scene sceneID="g2i-sw-D2e">
+            <objects>
+                <controller identifier="Weight" id="pV2-Lq-pni" customClass="Weight" customModule="BMI_Body_Mass_Index_MASTER_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Label" id="bch-TD-6FX">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <separator alignment="left" id="sCd-3C-VWw"/>
+                        <table alignment="left" id="4GI-9Y-T59">
+                            <items>
+                                <tableRow identifier="UsersTableRowControllerWeight" id="fdc-Mq-TCJ" customClass="UsersTableRowControllerWeight" customModule="BMI_Body_Mass_Index_MASTER_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="FrG-eT-IYn">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="dnd-qh-EU7"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="dnd-qh-EU7" id="gej-Vx-qkd"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="myTable" destination="4GI-9Y-T59" id="VBt-KI-RwV"/>
+                        <outlet property="titleLabel" destination="bch-TD-6FX" id="mzE-mZ-hBy"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="804" y="325"/>
+        </scene>
+        <!--Result-->
+        <scene sceneID="ybe-Td-3UY">
+            <objects>
+                <controller identifier="Result" id="F8M-dX-aSR" customClass="Result" customModule="BMI_Body_Mass_Index_MASTER_WatchKit_Extension">
+                    <items>
+                        <label width="128" height="32" alignment="center" text="Label" textAlignment="center" id="YNx-fI-jlB">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <label alignment="left" text="Label" id="Qum-MC-OyQ">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="aboutTheResultLabel" destination="Qum-MC-OyQ" id="7tb-iJ-kw4"/>
+                        <outlet property="resultLabel" destination="YNx-fI-jlB" id="YoQ-Vo-ToB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="967" y="325"/>
+        </scene>
+    </scenes>
+</document>
