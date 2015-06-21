@@ -20,7 +20,7 @@ class Result: WKInterfaceController {
     
     
     var mode = String?()
-    
+    var BMI: Float = 0.0
     
     
 
@@ -50,89 +50,57 @@ class Result: WKInterfaceController {
         
         if mode == "Metric Method"{
             //BMI = ( Weight in Kilograms / ( Height in Meters x Height in Meters ) )
-            var BMI = Weight / (Height * Height)
+            BMI = Weight / (Height * Height)
             NSLog("\(BMI)")
-            resultLabel.setText(NSString(format: "Your BMI: %.01f", BMI) as String)
-            var aboutTheResultText : String
-           
-            if (BMI <= 18.5){
-                
-                aboutTheResultLabel.setTextColor(UIColor.blueColor())
-                aboutTheResultLabel.setText("Underweight")
-            }
-            if ((BMI >= 18.5) && (BMI <= 24.99)){
-                
-                aboutTheResultLabel.setTextColor(UIColor.greenColor())
-                aboutTheResultLabel.setText("Normal Weight")
-            }
-            if ((BMI >= 25.0) && (BMI <= 29.99)){
-                
-                aboutTheResultLabel.setTextColor(UIColor.yellowColor())
-                aboutTheResultLabel.setText("Overweight")
-            }
-            if ((BMI >= 30.0) && (BMI <= 34.99)){
-                
-                aboutTheResultLabel.setTextColor(UIColor.orangeColor())
-                aboutTheResultLabel.setText("Obesity (Class 1)")
-            }
-            if ((BMI >= 35.0) && (BMI <= 39.99)){
-                
-                aboutTheResultLabel.setTextColor(UIColor.redColor())
-                aboutTheResultLabel.setText("Obesity (Class 2)")
-            }
-            if (BMI >= 40.0){
-                
-                aboutTheResultLabel.setTextColor(UIColor.redColor())
-                aboutTheResultLabel.setText("Morbid Obesity")
-            }
-
-            
-            
-
+            showResult()
         }
         else if mode == "Imperial Method"{
             //BMI = ( Weight in Pounds / ( Height in inches x Height in inches ) ) x 703
-            var BMI = (Weight / (Height * Height)) * 703
+            BMI = (Weight / (Height * Height)) * 703
             NSLog("\(BMI)")
-            resultLabel.setText(NSString(format: "Your BMI: %.01f", BMI) as String)
-            
-            if (BMI <= 18.5){
-                
-                aboutTheResultLabel.setTextColor(UIColor.blueColor())
-                aboutTheResultLabel.setText("Underweight")
-            }
-            if ((BMI >= 18.5) && (BMI <= 24.99)){
-                
-                aboutTheResultLabel.setTextColor(UIColor.greenColor())
-                aboutTheResultLabel.setText("Normal Weight")
-            }
-            if ((BMI >= 25.0) && (BMI <= 29.99)){
-                
-                aboutTheResultLabel.setTextColor(UIColor.yellowColor())
-                aboutTheResultLabel.setText("Overweight")
-            }
-            if ((BMI >= 30.0) && (BMI <= 34.99)){
-                
-                aboutTheResultLabel.setTextColor(UIColor.orangeColor())
-                aboutTheResultLabel.setText("Obesity (Class 1)")
-            }
-            if ((BMI >= 35.0) && (BMI <= 39.99)){
-                
-                aboutTheResultLabel.setTextColor(UIColor.redColor())
-                aboutTheResultLabel.setText("Obesity (Class 2)")
-            }
-            if (BMI >= 40.0){
-                
-                aboutTheResultLabel.setTextColor(UIColor.redColor())
-                aboutTheResultLabel.setText("Morbid Obesity")
-            }
-
+           showResult()
         }
         
         
     }
     
+    func showResult(){
     
+        resultLabel.setText(NSString(format: "Your BMI: %.01f", BMI) as String)
+        
+        if (BMI <= 18.5){
+            
+            aboutTheResultLabel.setTextColor(UIColor.blueColor())
+            aboutTheResultLabel.setText("Underweight")
+        }
+        if ((BMI >= 18.5) && (BMI <= 24.99)){
+            
+            aboutTheResultLabel.setTextColor(UIColor.greenColor())
+            aboutTheResultLabel.setText("Normal Weight")
+        }
+        if ((BMI >= 25.0) && (BMI <= 29.99)){
+            
+            aboutTheResultLabel.setTextColor(UIColor.yellowColor())
+            aboutTheResultLabel.setText("Overweight")
+        }
+        if ((BMI >= 30.0) && (BMI <= 34.99)){
+            
+            aboutTheResultLabel.setTextColor(UIColor.orangeColor())
+            aboutTheResultLabel.setText("Obesity (Class 1)")
+        }
+        if ((BMI >= 35.0) && (BMI <= 39.99)){
+            
+            aboutTheResultLabel.setTextColor(UIColor.redColor())
+            aboutTheResultLabel.setText("Obesity (Class 2)")
+        }
+        if (BMI >= 40.0){
+            
+            aboutTheResultLabel.setTextColor(UIColor.redColor())
+            aboutTheResultLabel.setText("Morbid Obesity")
+        }
+
+    
+    }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
