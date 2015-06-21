@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		615BB05C1B36CF4600B7A977 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615BB05B1B36CF4600B7A977 /* ResultController.swift */; };
 		616766FB1B3614EB0056E405 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616766FA1B3614EB0056E405 /* Storyboard.storyboard */; };
 		61C0656A1B360D1C008D1313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C065691B360D1C008D1313 /* AppDelegate.swift */; };
 		61C0656D1B360D1C008D1313 /* BMI_Body_Mass_Index_MASTER.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61C0656B1B360D1C008D1313 /* BMI_Body_Mass_Index_MASTER.xcdatamodeld */; };
@@ -69,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		615BB05B1B36CF4600B7A977 /* ResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
 		616766FA1B3614EB0056E405 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		61C065641B360D1C008D1313 /* BMI Body Mass Index MASTER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Body Mass Index MASTER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C065681B360D1C008D1313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			children = (
 				61C065691B360D1C008D1313 /* AppDelegate.swift */,
 				61C0658C1B360EAA008D1313 /* HomeScreen.swift */,
+				615BB05B1B36CF4600B7A977 /* ResultController.swift */,
 				61C0658F1B360EBF008D1313 /* Main.storyboard */,
 				61C065731B360D1C008D1313 /* Images.xcassets */,
 				61C065751B360D1C008D1313 /* LaunchScreen.xib */,
@@ -387,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615BB05C1B36CF4600B7A977 /* ResultController.swift in Sources */,
 				61C0656A1B360D1C008D1313 /* AppDelegate.swift in Sources */,
 				61C0656D1B360D1C008D1313 /* BMI_Body_Mass_Index_MASTER.xcdatamodeld in Sources */,
 				61C0658D1B360EAA008D1313 /* HomeScreen.swift in Sources */,
