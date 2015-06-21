@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="width" constant="200" id="0Xa-dd-nnO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qf-Uf-25M">
                                 <rect key="frame" x="61" y="276" width="200" height="30"/>
@@ -63,7 +63,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="calculateAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qa3-oy-8RE"/>
-                                    <segue destination="Jd5-CC-9DG" kind="show" id="mL7-fZ-0ll"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFI-fS-1iM">
@@ -140,6 +139,7 @@
                         <outlet property="imperialBtn" destination="c2n-05-kIi" id="LRM-qg-ZrL"/>
                         <outlet property="metricBtn" destination="gFI-fS-1iM" id="DAq-Wa-Vui"/>
                         <outlet property="weightInput" destination="8qf-Uf-25M" id="IUj-Ep-obN"/>
+                        <segue destination="Jd5-CC-9DG" kind="show" identifier="showResult" id="Tml-Gf-liU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -158,29 +158,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="os-x-10-10-yosemite-valley.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Htz-QY-m35">
+                                <rect key="frame" x="-4" y="64" width="328" height="416"/>
+                                <animations/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSd-AA-YRd">
                                 <rect key="frame" x="16" y="115" width="288" height="21"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBC-ku-tbj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBC-ku-tbj">
                                 <rect key="frame" x="16" y="159" width="288" height="21"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BMI Interval.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZeZ-HK-H0K">
+                                <rect key="frame" x="40" y="221" width="240" height="37"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Htz-QY-m35" firstAttribute="leading" secondItem="Xtv-Uh-QLp" secondAttribute="leadingMargin" constant="-20" id="70V-BY-fEa"/>
                             <constraint firstAttribute="centerX" secondItem="LSd-AA-YRd" secondAttribute="centerX" id="9Wp-TS-hT8"/>
                             <constraint firstItem="wBC-ku-tbj" firstAttribute="trailing" secondItem="Xtv-Uh-QLp" secondAttribute="trailingMargin" id="AI8-qA-TsW"/>
                             <constraint firstItem="LSd-AA-YRd" firstAttribute="trailing" secondItem="Xtv-Uh-QLp" secondAttribute="trailingMargin" id="BeD-fc-d25"/>
+                            <constraint firstItem="Htz-QY-m35" firstAttribute="top" secondItem="V3l-8f-TEh" secondAttribute="bottom" id="EW1-ye-SZX"/>
                             <constraint firstAttribute="centerY" secondItem="wBC-ku-tbj" secondAttribute="centerY" constant="70.5" id="Erv-U6-kG5"/>
                             <constraint firstAttribute="centerY" secondItem="LSd-AA-YRd" secondAttribute="centerY" constant="114.5" id="KF3-uZ-iZm"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Htz-QY-m35" secondAttribute="bottom" id="KKy-CJ-kmM"/>
+                            <constraint firstAttribute="centerY" secondItem="ZeZ-HK-H0K" secondAttribute="centerY" constant="0.5" id="Oat-6T-zGm"/>
+                            <constraint firstAttribute="centerX" secondItem="ZeZ-HK-H0K" secondAttribute="centerX" id="OwQ-fs-7Xt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Htz-QY-m35" secondAttribute="trailing" constant="-20" id="aeH-gl-1RI"/>
                             <constraint firstAttribute="centerX" secondItem="wBC-ku-tbj" secondAttribute="centerX" id="gzF-Qi-BGl"/>
                             <constraint firstItem="wBC-ku-tbj" firstAttribute="leading" secondItem="Xtv-Uh-QLp" secondAttribute="leadingMargin" id="q7a-5I-Mn4"/>
                             <constraint firstItem="LSd-AA-YRd" firstAttribute="leading" secondItem="Xtv-Uh-QLp" secondAttribute="leadingMargin" id="uLs-Iy-9g7"/>
@@ -192,6 +220,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="aboutTheResultLabel" destination="wBC-ku-tbj" id="qQi-o8-zPt"/>
+                        <outlet property="background" destination="Htz-QY-m35" id="oYr-W8-h6y"/>
                         <outlet property="resultLabel" destination="LSd-AA-YRd" id="oXg-IT-wnV"/>
                     </connections>
                 </viewController>
@@ -220,6 +249,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BMI Interval.png" width="300" height="40"/>
         <image name="os-x-10-10-yosemite-valley.jpg" width="1024" height="683"/>
     </resources>
 </document>

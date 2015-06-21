@@ -18,13 +18,14 @@ class ResultController: UIViewController {
     
     @IBOutlet weak var aboutTheResultLabel: UILabel!
     
+    @IBOutlet weak var background: UIImageView!
     
     var BMI : Float = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        addEffect()
         
         var Height : Float = NSString(string: height).floatValue
         var Weight : Float = NSString(string: weight).floatValue
@@ -48,6 +49,22 @@ class ResultController: UIViewController {
 
         
         }
+    
+    
+    func addEffect()
+    {
+        //add blur to background
+        var effect =  UIBlurEffect(style: UIBlurEffectStyle.Light)
+        
+        var effectView  = UIVisualEffectView(effect: effect)
+        
+        effectView.frame  = CGRectMake(0, 0, 2000, 2000)
+        
+        background.addSubview(effectView)
+        
+        
+    }
+
         
         
     func showResult(){

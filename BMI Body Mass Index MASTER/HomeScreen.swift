@@ -100,9 +100,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func calculateAction(sender: AnyObject) {
-        modeMetric = metricMode
-        height = heightInput.text
-        weight = weightInput.text
+        if heightInput.text != "" && weightInput.text != ""{
+            modeMetric = metricMode
+            height = heightInput.text
+            weight = weightInput.text
+            performSegueWithIdentifier("showResult", sender: self)
+        
+        }
+        else{
+            let alert = UIAlertView()
+            alert.title = "Alert"
+            alert.message = "You have to type your weight and height"
+            alert.addButtonWithTitle("Okay")
+            alert.show()
+        }
        }
 
 }
